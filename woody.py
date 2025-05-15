@@ -211,12 +211,7 @@ def onevent_ready_to_flip_0():
     if optical_3.hue() >150:
             drivetrain.turn_for(RIGHT,180,DEGREES)
             drivetrain.drive_for(FORWARD,100,MM)
-    else:
-        for repeat_count in range(5):
-            Armm.spin_for(FORWARD, 270, DEGREES)
-            wait(0.01, SECONDS)
-            Armm.spin_for(REVERSE, 270, DEGREES)
-            wait(5, MSEC)
+        
 def onevent_ready_to_flip_1():
     drivetrain.set_drive_velocity(50,PERCENT)
     drivetrain.drive(FORWARD)
